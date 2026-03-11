@@ -101,6 +101,16 @@ process: It returns the child process which is global.
 send(): It sends a message from worker to master or vice versa. 
 kill(): It is used to kill the current worker.
 
+## memory leack handle
+A memory leak in Node.js occurs when an application unintentionally retains references to objects that are no longer needed, preventing the garbage collector (GC) from reclaiming their memory.
+
+## readFile vs readFileSync 
+As i said before both readFile() and readFileSync() reads the file at once and then delivers the content.
+
+The difference is that:
+- readFile is non-blocking async.
+- readFileSync is blocking sync.
+
 ## 46. How to manage sessions in NodeJS?
 Session management can be done in NodeJS by using the express-session module. It helps in saving the data in the key-value form. In this module, the session data is not saved in the cookie itself, just the session ID.
 
